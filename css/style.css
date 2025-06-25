@@ -1,0 +1,308 @@
+/* -------------------------------- IMPORT -------------------------------- */
+@font-face {
+    font-family: "Libre Baskerville", serif;
+    src: url('/fonts/"Libre Baskerville", serif.woff') format('woff');
+}
+@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+/* -------------------------------- MAIN CSS -------------------------------- */
+html {
+    font-family: "Libre Baskerville", serif;
+}
+body {
+    margin: 0;
+    font-family: "Libre Baskerville", serif;
+    text-transform: lowercase !important;
+    font-weight: 800 !important;
+    width: 100%;
+    background-color: black;
+}
+h1 {
+    font-size: 6vh;
+}
+h2 {
+    font-size: 4vh;
+}
+h3 {
+    font-size: 2vh;
+}
+h4 {
+    font-size: 2vh;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+section {
+    width: 100%;
+    margin: 0;
+}
+/* -------------------------------- SECTIONS -------------------------------- */
+#intro {
+    background-image: url(../images/City-Background-2.jpg);
+    background-color: rgb(165, 165, 165);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    min-height: 100vh;
+}
+#projects {
+    background-color: black;
+    color: white;
+}
+#contact-me {
+    background-image: url(../images/Background-Empty.png);
+    background-color: rgb(165, 165, 165);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+#contact-me, a {
+    color: black;
+}
+/* -------------------------------- GENERAL -------------------------------- */
+#text {
+    font-size: 4vh;
+    color: black;
+    z-index: 50;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.container-box {
+    display: flex;
+    padding: 60px;
+
+}
+.container-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.container-column {
+    display: flex;
+    flex-direction: column;
+}
+.project-container {
+    display: flex;
+    flex-direction: column;
+}
+.project-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.project-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.dates {
+    font-family: "Libre Baskerville", serif;
+}
+.dates-box {
+    display: block;
+    background-color: white;
+    color: black;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.divider {
+    border-top: 2px white solid;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 100%;
+}
+.email-link {
+    color: black;
+}
+.email-link:hover {
+    color: rgba(0, 0, 0, 0.537);
+    text-decoration: underline !important;
+}
+.button {
+    display: block;
+    border: solid 2px black;
+    border-radius: 100px;
+    padding: 15px;
+}
+.button, a {
+    color: black;
+}
+.button:hover {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.526);
+    border: solid 2px rgba(0, 0, 0, 0);
+    transition: 0.2s;
+    color: white;
+}
+/* -------------------------------- RESPONSIVE -------------------------------- */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 4vh;
+    }
+    h2 {
+        font-size: 4vh;
+    }
+    h3 {
+        font-size: 3vh;
+    }
+    h4 {
+        font-size: 2vh;
+    }
+    li {
+        font-size: 2vh;
+    }
+    #text {
+        font-size: 2vh;
+    }
+    .parent {
+        display: none !important;
+    }
+    section {
+        width: 100%;
+        margin: 0;
+    }
+    .col-sm-4 {
+        width: 100%;
+    }
+    .col-sm-8 {
+        width: 100%;
+    }
+    .container {
+        margin: auto;
+        width: 90%;
+        padding: 70px 0;
+        height: 100%;
+    }
+    .container-box {
+        padding: 30px;
+    }
+    #intro {
+        background-position: left;
+        background-color: black;
+        min-height: 100vh;
+    }
+    .divider {
+        border-top: 4px white solid;
+    }
+    .button {
+        display: block;
+        border: solid 4px black;
+        padding: 20px;
+}
+}
+/* -------------------------------- BUTTONS -------------------------------- */
+.project-button {
+    display: block;
+    border: none;
+    font-family: "Libre Baskerville", serif;
+    color: white;
+    margin-top: 3vh;
+}
+.project-link, a {
+    color: white;
+    text-align: right;
+}
+.project-link, a:hover {
+    color: rgba(255, 255, 255, 0.559);
+}
+.project-button:hover {
+    border: 10px white solid;
+    background-color: white;
+    color: black;
+}
+.button-cover {
+    color: white;
+    display: block;
+    border: 10px white solid;
+    background-color: none;
+    padding: 20px;
+}
+.button-cover:hover {
+    color: black;
+    background-color: white;
+    border: 10px white solid;
+}
+/* -------------------------------- MARQUEE -------------------------------- */
+marquee {
+    color: #1c1919 solid;
+    font-size: 8vh;
+    z-index: 100px;
+}
+.marquee-experience {
+    font-family: "Libre Baskerville", serif;
+    border-left: none;
+    border-right: none;
+    border-top: 10px white solid;
+    border-bottom: 10px white solid;
+    background-color: black;
+}
+.marquee-project {
+    font-family: "Micro 5 Charted";
+    border: 10px #1c1919 solid;
+    background-color: #ffa669;
+}
+/* -------------------------------- CLOUD -------------------------------- */
+.parent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.parent > div {
+    position: absolute;
+    top: 0;
+}
+.child1 { 
+    width: 40vw;
+    height: 80vh;
+}
+.child3 {
+    z-index: 0;
+}
+.child2 > div {
+    position: absolute;
+}
+  .child2-one {
+    width: 200px;
+    height: 100px;
+    top: -30px;
+    left: -1000px;
+    z-index: 100;
+    filter: blur(2px);
+}
+.child2-two {
+    width: 200px;
+    height: 250px;
+    top: 50px;
+    left: 175px;
+    filter: blur(2px);
+}
+.child2-three {
+    width: 100px;
+    height: 75px;
+    top: 500px;
+    left: 300px;
+    z-index: 100;
+    filter: blur(2px);
+}
+.zoom {
+  padding: 50px;
+  transition: transform .2s;
+  margin: 0 auto;
+}
+.zoom:hover {
+  transform: scale(1.5);
+}
